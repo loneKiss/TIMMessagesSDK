@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MT_MeetingActionItem">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="92.5"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meeting_action_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="f8l-P0-d3E">
+                    <rect key="frame" x="10" y="10" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="02l-qk-fUK"/>
+                        <constraint firstAttribute="height" constant="36" id="VGJ-eL-DFU"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0o-UL-6WR">
+                    <rect key="frame" x="56" y="10" width="348" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxj-9r-Fxl">
+                    <rect key="frame" x="56" y="32.5" width="348" height="13.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13.5" id="g5d-qA-76r"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5B-eb-ABg">
+                    <rect key="frame" x="0.0" y="59" width="414" height="0.5"/>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.92941176470588238" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="loD-x7-2Z1"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加入会议" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hph-qU-53A">
+                    <rect key="frame" x="182" y="68.5" width="50" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.15294117647058825" green="0.50196078431372548" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1G-x7-Amo">
+                    <rect key="frame" x="0.0" y="59.5" width="414" height="33"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="d5B-eb-ABg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3na-25-qPV"/>
+                <constraint firstItem="f8l-P0-d3E" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="9X4-E9-SOj"/>
+                <constraint firstItem="q1G-x7-Amo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AA4-xO-NyY"/>
+                <constraint firstAttribute="trailing" secondItem="d5B-eb-ABg" secondAttribute="trailing" id="Fr7-g0-N6e"/>
+                <constraint firstItem="t0o-UL-6WR" firstAttribute="leading" secondItem="f8l-P0-d3E" secondAttribute="trailing" constant="10" id="G5J-Sa-rvu"/>
+                <constraint firstAttribute="trailing" secondItem="t0o-UL-6WR" secondAttribute="trailing" constant="10" id="HfP-t5-Fts"/>
+                <constraint firstItem="q1G-x7-Amo" firstAttribute="top" secondItem="d5B-eb-ABg" secondAttribute="bottom" id="JP5-so-6sp"/>
+                <constraint firstItem="fxj-9r-Fxl" firstAttribute="leading" secondItem="f8l-P0-d3E" secondAttribute="trailing" constant="10" id="Ldn-bg-5ko"/>
+                <constraint firstAttribute="trailing" secondItem="q1G-x7-Amo" secondAttribute="trailing" id="PJX-Lz-Dw0"/>
+                <constraint firstItem="hph-qU-53A" firstAttribute="top" secondItem="d5B-eb-ABg" secondAttribute="bottom" constant="9" id="W9s-Ds-Y8f"/>
+                <constraint firstItem="fxj-9r-Fxl" firstAttribute="top" secondItem="t0o-UL-6WR" secondAttribute="bottom" constant="4.5" id="Zhz-Nl-BpT"/>
+                <constraint firstAttribute="trailing" secondItem="fxj-9r-Fxl" secondAttribute="trailing" constant="10" id="dhi-VC-6W0"/>
+                <constraint firstAttribute="bottom" secondItem="q1G-x7-Amo" secondAttribute="bottom" id="faz-4Z-AZU"/>
+                <constraint firstItem="hph-qU-53A" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ixS-fC-IcE"/>
+                <constraint firstItem="f8l-P0-d3E" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="rgD-Xg-aEN"/>
+                <constraint firstItem="d5B-eb-ABg" firstAttribute="top" secondItem="fxj-9r-Fxl" secondAttribute="bottom" constant="13" id="uey-mH-lXx"/>
+                <constraint firstItem="t0o-UL-6WR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="zgZ-Xm-oH5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="joinBtn" destination="q1G-x7-Amo" id="HEj-SW-IcI"/>
+                <outlet property="meetingImage" destination="f8l-P0-d3E" id="e0p-hz-pXQ"/>
+                <outlet property="timeLabel" destination="fxj-9r-Fxl" id="fhw-aD-HQT"/>
+                <outlet property="titleLabel" destination="t0o-UL-6WR" id="PpR-lz-3D1"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="153.01339285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="meeting_action_icon.png" width="36" height="36"/>
+    </resources>
+</document>

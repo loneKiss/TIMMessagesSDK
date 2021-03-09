@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MT_ChaReplytAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="114"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Np-VA-LXC">
+                    <rect key="frame" x="386.5" y="0.0" width="31.5" height="31.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="31.5" id="AEm-94-K5O"/>
+                        <constraint firstAttribute="height" constant="31.5" id="bXU-Jy-ulz"/>
+                    </constraints>
+                    <state key="normal" image="MT_Close.png"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2Np-VA-LXC" secondAttribute="trailing" id="IXe-de-xuM"/>
+                <constraint firstItem="2Np-VA-LXC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="n7b-jD-2ah"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="closeBtn" destination="2Np-VA-LXC" id="mbK-gy-maA"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="415.17857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MT_Close.png" width="11.5" height="11.5"/>
+    </resources>
+</document>
