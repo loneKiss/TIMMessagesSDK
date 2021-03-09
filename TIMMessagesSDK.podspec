@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
 spec.name         = "TIMMessagesSDK"
-spec.version      = "1.0.0"
+spec.version      = "1.0.2"
 spec.summary      = "TIMMessagesSDK for IOS"
 spec.description  = "TIMMessagesSDK.framework一款用于即时视频聊天通讯的sdk"
 spec.homepage     = "https://github.com/loneKiss/TIMMessagesSDK"
@@ -21,7 +21,7 @@ spec.dependency 'TXLiteAVSDK_TRTC','7.8.9519' #音视频库
 # 图片，其他资源文件存放的路径，需要注意的是，xib，nib也属于资源文件
 spec.resource_bundles = {
     # 这是个数组，可以添加其他bundle
-    'TIMMessagesSDK' => ['TIMMessagesSDK/Resources/LocalResources/*'],
+    'MessagesSDK' => ['TIMMessagesSDK/Resources/LocalResources/*'],
   }
   
  spec.resource = ['TIMMessagesSDK/Resources/Bundles/TUIKitFace.bundle',
