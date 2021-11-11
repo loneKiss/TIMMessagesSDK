@@ -29,16 +29,19 @@ TIM_InterfaceDestroySingle(UserManager)
  *  @param refreshToken              刷新登录token
  *  @param projectToken              集成项目的token
  *  @param versonType                项目环境配置
+ *  @param parentVC                  父控制器
  */
-- (void)TIM_saveAccountId:(NSString *)accountId andAccountName:(NSString *)accountName andFishAccountId:(NSString *)fishAccountId andAccessToken:(NSString *)accessToken andRefreshToken:(NSString *)refreshToken andProjectToken:(NSString *)projectToken withProjectVerson:(NSInteger)versonType;
+- (void)TIM_saveAccountId:(NSString *)accountId andAccountName:(NSString *)accountName andFishAccountId:(NSString *)fishAccountId andAccessToken:(NSString *)accessToken andRefreshToken:(NSString *)refreshToken andProjectToken:(NSString *)projectToken andProjectVerson:(NSInteger)versonType
+    withParentVC:(UIViewController *)parentVC;
 
 /**
  *  极光推送初始化会议系统
  *
  *  @param userInfo                  极光推送进入会议系统初始化字典
  *  @param versonType                项目环境配置
+ *  @param parentVC                  父控制器
  */
-- (void)setUpMessageSDKWithDictionary:(NSMutableDictionary *)userInfo withProjectVerson:(NSInteger)versonType;
+- (void)setUpMessageSDKWithDictionary:(NSMutableDictionary *)userInfo andProjectVerson:(NSInteger)versonType withParentVC:(UIViewController *)parentVC;
 
 - (void)saveDepartmentType:(NSString *)departmentType;
 /** 保存开发环境 */
@@ -75,6 +78,10 @@ TIM_InterfaceDestroySingle(UserManager)
 /** 获取项目环境配置外置项目工程请求地址 */
 -(NSString *)getOutSideProjectCommonUrlWithProjectName:(NSString *)projectName;
 
+/**
+ @brief 获取sdk版本号
+ */
++ (NSString *)getSDKVersion;
 
 @end
 
