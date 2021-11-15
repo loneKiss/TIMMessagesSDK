@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
 spec.name         = "TIMMessagesSDK"
-spec.version      = "2.0.1"
+spec.version      = "2.0.2"
 spec.summary      = "TIMMessagesSDK for IOS"
 spec.description  = "TIMMessagesSDK.framework一款用于即时视频聊天通讯的sdk"
 spec.homepage     = "https://github.com/loneKiss/TIMMessagesSDK"
